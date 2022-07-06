@@ -232,6 +232,7 @@ height: auto;}
 }
 .portfolio-list-item {flex-basis: calc(100% / 3);
   border: 1px solid #EEEEEE;
+  width: 370px;
 }
 
 .portfolio-div {padding: 20px;}
