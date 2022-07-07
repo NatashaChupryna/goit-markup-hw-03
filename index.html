@@ -18,31 +18,38 @@
   
   <body>
     <header>
+
+      <nav class="header-div">
+    
       <a href="WebStudio" class="logo">
         <span class="logo-first-word">Web</span
         ><span class="logo-second-word">Studio</span></a
       >
-      <nav>
-        <ul>
+
+        <ul  class="main-nav">
           <li class="list-item">
-            <a href="./Studio.html" class="link header-link current-link"
-              >Студия</a
-            >
+            <a href="./index.html" class="link header-link">Студия</a>
           </li>
 
           <li class="list-item">
-            <a href="./Portfolio.html" class="link header-link">Портфолио</a>
+            <a href="./Portfolio.html" class="link header-link current-link"
+              >Портфолио</a>
           </li>
 
           <li class="list-item">
             <a href="Контакты" class="link header-link">Контакты</a>
           </li>
         </ul>
-      </nav>
-      <a href="mailto:info@devstudio.com" class="contact-link"
-        >info@devstudio.com</a
-      >
-      <a href="tel:+380961111111" class="contact-link">+380961111111</a>
+      
+      
+  
+      <ul class="secondsry-nav">
+        <li><a href="mailto:info@devstudio.com" class="contact-link"
+          >info@devstudio.com</a
+        ></li>
+        <li><a href="tel:+380961111111" class="contact-link">+380961111111</a></li>
+      </ul>
+    </nav>
     </header>
 
     <main>
@@ -53,8 +60,9 @@
 
       <!--Список преимуществ-->
       <section class="benefits">
+        <div class="container">
         <h2 hidden>Список преимуществ</h2>
-        <ul>
+        <ul class="benefits-list">
           <li class="list-item">
             <h3 class="benefits-title">Внимание к деталям</h3>
             <p class="benefits-text">
@@ -87,10 +95,13 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
 
+       <!--Чем мы занимаемся-->
       <section class="our-work">
-        <!--Чем мы занимаемся-->
+        <div class="container">
+       
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul>
           <li class="list-item">
@@ -117,12 +128,13 @@
             />
           </li>
         </ul>
+      </div>
       </section>
 
       <!--Наша команда-->
       <section class="team">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
-        <div class="www">
           <ul>
             <li class="list-item">
               <img
@@ -169,26 +181,24 @@
     </main>
 
     <footer class="footer">
-      <a href="WebStudio" class="logo">
+      <a href="WebStudio" class="logo footer-logo">
         <span class="logo-first-word">Web</span
-        ><span class="logo-white-word">Studio</span></a
-      >
-      <address>
-        <a
+        ><span class="logo-white-word">Studio</span></a>
+
+      <a
           href="https://goo.gl/maps/T2ZpNwHjRuijeioPA"
           class="link adress"
           target="«_blank»"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           г. Киев, пр-т Леси Украинки, 26
         </a>
-        <a href="mailto:info@devstudio.com" class="contact-link footer-link"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="contact-link footer-link"
-          >+380961111111</a
-        >
-      </address>
+
+      <a href="mailto:info@devstudio.com" class="contact-link footer-link"
+          >info@devstudio.com</a>
+
+      <a href="tel:+380961111111" class="contact-link footer-link"
+          >+380961111111</a>
+      
     </footer>
   </body>
 </html>

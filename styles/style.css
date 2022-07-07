@@ -23,6 +23,15 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
 
 /* header */
 
@@ -30,7 +39,6 @@ img {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #eeeeee;
-  margin-bottom: 94px;
 }
 
 .main-nav {
@@ -101,15 +109,14 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
+  padding-top: 200px;
 }
 .btn {
   font-family: inherit;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -118,7 +125,6 @@ img {
   border-radius: 5px;
   border-color: transparent;
   min-width: 200px;
-  height: 50px;
   padding: 10px 32px;
 }
 
@@ -127,6 +133,16 @@ img {
 }
 
 /* Список преимуществ */
+.benefits-list{display: flex;
+gap: 30px;
+justify-content: space-between;
+padding-left: 0;
+padding-bottom: 94px;
+padding-top: 94px;
+margin-top: 0;
+margin-bottom: 0;}
+
+
 .benefits-title {
   color: var(--main-text-color);
   font-style: normal;
@@ -136,6 +152,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .benefits-text {
   color: var(--secondary-text-color);
   font-style: normal;
@@ -191,16 +208,18 @@ img {
 }
 
 /* footer */
-.footer-logo {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
 
 .footer {
   background-color: #2f303a;
   display: flex;
   flex-direction: column;
   padding-left: 215px;
+  padding-bottom: 50px;
+}
+
+.footer-logo {
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer > a + a + a {
@@ -221,6 +240,11 @@ img {
   margin-bottom: 10px;
 }
 
+.adress:hover,
+.adress:focus {
+  color: #2196f3;
+}
+
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -228,10 +252,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.adress:hover,
-.adress:focus {
-  color: #2196f3;
 }
 
 /* Портфолио */
@@ -242,6 +262,7 @@ img {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 94px;
 
 }
 
