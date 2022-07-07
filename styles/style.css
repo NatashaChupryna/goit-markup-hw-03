@@ -29,7 +29,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 
 
@@ -117,7 +116,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: in;
+  display: inline-block;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -128,6 +127,7 @@ img {
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
+  margin-bottom: 200px;
 }
 
 .hero {
@@ -201,7 +201,14 @@ margin-bottom: 0;}
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
+.tram-list{display: flex;
+gap: 30px;
+justify-content: space-around;
+padding-left: 0;
+margin-bottom: 94px;}
 
 .workers-name {
   color: var(--main-text-color);
