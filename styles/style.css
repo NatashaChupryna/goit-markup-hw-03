@@ -14,7 +14,7 @@ ul {
 
 .link {
   text-decoration: none;
-  color: #212121
+  color: #212121;
 }
 
 img {
@@ -24,20 +24,18 @@ img {
 .container {
   width: 1200px;
   padding-right: 15px;
-  padding-bottom: 94px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
-header>.container, .hero>.container
-{padding-bottom: 0;}
 
 /* header */
+
+.header {border-bottom: 1px solid #eeeeee;}
 
 .header-div {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .main-nav {
@@ -100,6 +98,14 @@ header>.container, .hero>.container
 }
 
 /* Section hero */
+
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   color: #ffffff;
   font-style: normal;
@@ -110,8 +116,8 @@ header>.container, .hero>.container
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
-  padding-top: 200px;
 }
+
 .btn {
   font-family: inherit;
   font-style: normal;
@@ -129,15 +135,14 @@ header>.container, .hero>.container
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
- margin-bottom: 200px;
-}
-
-.hero {
-  background-color: #2f303a;
-  text-align: center;
 }
 
 /* Список преимуществ */
+
+.benefits {
+  padding-top: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -151,13 +156,15 @@ header>.container, .hero>.container
   overflow: hidden;
 }
 
-.benefits-list{display: flex;
-gap: 30px;
-justify-content: space-between;
-padding-left: 0;
-padding-top: 94px;
-margin-top: 0;
-margin-bottom: 0;}
+.benefits-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-basis: 270px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .benefits-title {
   color: var(--main-text-color);
@@ -167,6 +174,8 @@ margin-bottom: 0;}
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .benefits-text {
@@ -176,16 +185,22 @@ margin-bottom: 0;}
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10;
+  margin-bottom: 0;
 }
 
 /* Чем мы занимаемся */
+.our-work{padding-top: 94px;
+padding-bottom: 94px;}
 
-.our-works-list {display: flex;
-justify-content: space-between;
-padding-left: 0;
-gap: 30px;
-margin-top: 0;
-margin-bottom: 0;}
+.our-works-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  gap: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .work-title {
   color: var(--main-text-color);
@@ -203,7 +218,10 @@ margin-bottom: 0;}
 
 .team {
   background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .team-title {
   color: var(--main-text-color);
   font-weight: 700;
@@ -213,25 +231,29 @@ margin-bottom: 0;}
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
-.team-list{display: flex;
-gap: 30px;
-justify-content: space-around;
-padding-left: 0;
-margin-top: 0;
-margin-bottom: 0;}
 
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-.team-card{background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;}
+.team-card {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
-  .workers-title-div{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
+.workers-title-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 
 .workers-name {
   color: var(--main-text-color);
@@ -259,14 +281,15 @@ margin-bottom: 0;}
 
 .footer {
   background-color: #2f303a;
-}
-
-.footer-container{  display: flex;
-  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
-  }
+}
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+ 
+}
 
 .footer > a + a + a {
   margin-bottom: 10px;
@@ -302,7 +325,8 @@ margin-bottom: 0;}
   margin-bottom: 9px;
 }
 .footer-link:last-child {
-  margin-bottom: 0;}
+  margin-bottom: 0;
+}
 
 /* Портфолио */
 .portfolio-container {
@@ -368,7 +392,6 @@ margin-bottom: 0;}
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-
 }
 
 .portfolio-title {
