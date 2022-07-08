@@ -13,128 +13,139 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+    "
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  
+
   <body>
     <header>
+      <div class="container">
+        <nav class="header-div">
+          <a href="WebStudio" class="logo">
+            <span class="logo-first-word">Web</span
+            ><span class="logo-second-word">Studio</span></a
+          >
 
-      <nav class="header-div">
-    
-      <a href="WebStudio" class="logo">
-        <span class="logo-first-word">Web</span
-        ><span class="logo-second-word">Studio</span></a
-      >
+          <ul class="main-nav">
+            <li class="list-item">
+              <a href="./index.html" class="link header-link current-link">Студия</a>
+            </li>
 
-        <ul  class="main-nav">
-          <li class="list-item">
-            <a href="./index.html" class="link header-link">Студия</a>
-          </li>
+            <li class="list-item">
+              <a href="./Portfolio.html" class="link header-link"
+                >Портфолио</a
+              >
+            </li>
 
-          <li class="list-item">
-            <a href="./Portfolio.html" class="link header-link current-link"
-              >Портфолио</a>
-          </li>
+            <li class="list-item">
+              <a href="Контакты" class="link header-link">Контакты</a>
+            </li>
+          </ul>
 
-          <li class="list-item">
-            <a href="Контакты" class="link header-link">Контакты</a>
-          </li>
-        </ul>
-      
-      
-  
-      <ul class="secondsry-nav">
-        <li><a href="mailto:info@devstudio.com" class="contact-link"
-          >info@devstudio.com</a
-        ></li>
-        <li><a href="tel:+380961111111" class="contact-link">+380961111111</a></li>
-      </ul>
-    </nav>
+          <ul class="secondsry-nav">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="contact-link">+380961111111</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-        <button type="button" class="btn">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения<br />для вашего бизнеса
+          </h1>
+          <button type="button" class="btn">Заказать услугу</button>
+        </div>
       </section>
 
       <!--Список преимуществ-->
       <section class="benefits">
         <div class="container">
-        <h2 hidden>Список преимуществ</h2>
-        <ul class="benefits-list">
-          <li class="list-item">
-            <h3 class="benefits-title">Внимание к деталям</h3>
-            <p class="benefits-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
+          <h2 hidden>Список преимуществ</h2>
+          <ul class="benefits-list">
+            <li class="list-item">
+              <h3 class="benefits-title">Внимание к деталям</h3>
+              <p class="benefits-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
 
-          <li class="list-item">
-            <h3 class="benefits-title">Пунктуальность</h3>
-            <p class="benefits-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
+            <li class="list-item">
+              <h3 class="benefits-title">Пунктуальность</h3>
+              <p class="benefits-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
 
-          <li class="list-item">
-            <h3 class="benefits-title">Планирование</h3>
-            <p class="benefits-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
+            <li class="list-item">
+              <h3 class="benefits-title">Планирование</h3>
+              <p class="benefits-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
 
-          <li class="list-item">
-            <h3 class="benefits-title">Современные технологии</h3>
-            <p class="benefits-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </div>
+            <li class="list-item">
+              <h3 class="benefits-title">Современные технологии</h3>
+              <p class="benefits-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-       <!--Чем мы занимаемся-->
+      <!--Чем мы занимаемся-->
       <section class="our-work">
         <div class="container">
-       
-        <h2 class="work-title">Чем мы занимаемся</h2>
-        <ul class="our-works-list">
-          <li class="list-item">
-            <img
-              src="./image/studio/what-we-do1.jpg"
-              alt="Рабочий процесс"
-              width="370"
-            />
-          </li>
+          <h2 class="work-title">Чем мы занимаемся</h2>
+          <ul class="our-works-list">
+            <li class="list-item">
+              <img
+                src="./image/studio/what-we-do1.jpg"
+                alt="Рабочий процесс"
+                width="370"
+              />
+            </li>
 
-          <li class="list-item">
-            <img
-              src="./image/studio/what-we-do2.jpg"
-              alt="Рабочий процесс"
-              width="370"
-            />
-          </li>
+            <li class="list-item">
+              <img
+                src="./image/studio/what-we-do2.jpg"
+                alt="Рабочий процесс"
+                width="370"
+              />
+            </li>
 
-          <li class="list-item">
-            <img
-              src="./image/studio/what-we-do3.jpg"
-              alt="Рабочий процесс"
-              width="370"
-            />
-          </li>
-        </ul>
-      </div>
+            <li class="list-item">
+              <img
+                src="./image/studio/what-we-do3.jpg"
+                alt="Рабочий процесс"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--Наша команда-->
       <section class="team">
         <div class="container">
-        <h2 class="team-title">Наша команда</h2>
+          <h2 class="team-title">Наша команда</h2>
           <ul class="tram-list">
             <li class="list-item">
               <img
@@ -181,11 +192,13 @@
     </main>
 
     <footer class="footer">
-      <a href="WebStudio" class="logo footer-logo">
-        <span class="logo-first-word">Web</span
-        ><span class="logo-white-word">Studio</span></a>
+      <div class="container footer-container">
+        <a href="WebStudio" class="logo">
+          <span class="logo-first-word">Web</span
+          ><span class="logo-white-word">Studio</span></a
+        >
 
-      <a
+        <a
           href="https://goo.gl/maps/T2ZpNwHjRuijeioPA"
           class="link adress"
           target="«_blank»"
@@ -193,12 +206,14 @@
           г. Киев, пр-т Леси Украинки, 26
         </a>
 
-      <a href="mailto:info@devstudio.com" class="contact-link footer-link"
-          >info@devstudio.com</a>
+        <a href="mailto:info@devstudio.com" class="contact-link footer-link"
+          >info@devstudio.com</a
+        >
 
-      <a href="tel:+380961111111" class="contact-link footer-link"
-          >+380961111111</a>
-      
+        <a href="tel:+380961111111" class="contact-link footer-link"
+          >+380961111111</a
+        >
+      </div>
     </footer>
   </body>
 </html>
